@@ -1,0 +1,85 @@
+@font-face {
+  font-family: 'GothamBold';
+  src: url('./fonts/GothamRnd-Bold.otf') format('opentype');
+  font-style: bold;
+}
+
+@font-face {
+  font-family: 'GothamBoldIta';
+  src: url('./fonts/GothamRnd-BoldIta.otf') format('opentype');
+  font-style: bold italic;
+}
+
+@font-face {
+  font-family: 'GothamBook';
+  src: url('./fonts/GothamRnd-Book.otf') format('opentype');
+  font-style: book;
+}
+
+@font-face {
+  font-family: 'GothamBookIta';
+  src: url('./fonts/GothamRnd-BookIta.otf') format('opentype');
+  font-style: book italic;
+}
+
+@font-face {
+  font-family: 'GothamLight';
+  src: url('./fonts/GothamRnd-Light.otf') format('opentype');
+  font-style: light;
+}
+
+@font-face {
+  font-family: 'GothamLightIta';
+  src: url('./fonts/GothamRnd-LightIta.otf') format('opentype');
+  font-style: light italic;
+}
+
+@font-face {
+  font-family: 'GothamMedium';
+  src: url('./fonts/GothamRnd-Medium.otf') format('opentype');
+  font-style: medium;
+}
+
+@font-face {
+  font-family: 'GothamMedIta';
+  src: url('./fonts/GothamRnd-MedIta.otf') format('opentype');
+  font-style: medium italic;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+  
+}
+
+body {
+  font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.7;
+    color: #777;
+    padding: 3rem;
+    box-sizing: border-box;
+    background-image: url(./images/PNG/iStock-1@2x.png);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+    
+  
+    
+}
+
+.header {
+  height: 95vh;
+  font-size: 2rem;
+  
+}
