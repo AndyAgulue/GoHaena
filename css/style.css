@@ -104,10 +104,14 @@ body {
   height: 25vh;
 }
 
-.heading-primary{
-  z-index: 9000;
+.heading-primary {
+  /* z-index: 9000; */
   position: absolute;
   top: 100%;
 }
 
+.heading-secondary {
+  position: absolute;
+  top: 150%;
+}
 
