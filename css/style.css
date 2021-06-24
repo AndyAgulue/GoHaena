@@ -59,6 +59,7 @@ body {
   font-size: 1.8rem;
   background-image: url(./images/PNG/iStock-1@2x.png);
   background-size: cover;
+  width: 100%;
   position: relative;
   background-position: center;
   background-repeat: no-repeat; }
@@ -98,7 +99,7 @@ body {
 .heading-secondary {
   font-size: 1em;
   font-weight: 500;
-  color: #2ff308;
+  color: rgba(21, 235, 188, 0.801);
   font-family: 'GothamBoldIta';
   text-align: center;
   top: 150%;
@@ -130,29 +131,29 @@ body {
 .navigation_background {
   height: 4rem;
   width: 4rem;
-  border-radius: 50%;
-  position: fixed;
-  top: 1.5rem;
+  border-radius: 90%;
+  position: absolute;
+  top: 2rem;
   right: 1.5rem;
   background-color: #648a6a;
-  z-index: 1000;
+  z-index: 1;
   transition: transform 0.8s cubic-bezier(0.83, 0, 0.17, 1); }
 
 .navigation_button {
-  background-color: #ffffff;
   height: 5rem;
   width: 5rem;
-  position: fixed;
+  position: absolute;
   top: 1.5rem;
   right: 1rem;
-  border-radius: 50%;
   z-index: 2000;
   box-shadow: 0 1rem 3rem black, 0.1;
   text-align: center; }
+  .navigation_button::before {
+    background-color: transparent; }
 
 .navigation_nav {
   height: 100vh;
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
   z-index: 1500;
@@ -197,17 +198,175 @@ body {
   opacity: 1; }
 
 .navigation_icon {
-  position: relative; }
+  position: relative;
+  margin-top: 2.5rem; }
   .navigation_icon, .navigation_icon::before, .navigation_icon::after {
     width: 3rem;
     height: 2px;
-    background-color: black;
+    background-color: white;
     display: inline-block; }
-    .navigation_icon::before, .navigation_icon::after, .navigation_icon::before::before, .navigation_icon::before::after, .navigation_icon::after::before, .navigation_icon::after::after {
-      content: "";
-      position: absolute;
-      left: 0; }
-    .navigation_icon::before, .navigation_icon::before::before, .navigation_icon::after::before {
-      top: -1rem; }
-    .navigation_icon::after, .navigation_icon::before::after, .navigation_icon::after::after {
-      top: 1rem; }
+  .navigation_icon::before, .navigation_icon::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    transition: all .2sec; }
+  .navigation_icon::before {
+    top: -.8rem; }
+  .navigation_icon::after {
+    top: .8rem; }
+
+.navigation_button:hover .navigation_icon::before {
+  top: -1rem; }
+
+.navigation_button:hover .navigation_icon::after {
+  top: 1rem; }
+
+.navigation_checkbox:checked + .navigation_button .navigation_icon {
+  background-color: transparent; }
+
+.navigation_checkbox:checked + .navigation_button .navigation_icon::before {
+  top: 0;
+  transform: rotate(135deg); }
+
+.navigation_checkbox:checked + .navigation_button .navigation_icon::after {
+  top: 0;
+  transform: rotate(-135deg); }
+
+.quickSelections1 {
+  text-align: center;
+  margin-bottom: 4rem; }
+  .quickSelections1_line {
+    position: relative;
+    color: grey; }
+  .quickSelections1_access {
+    color: antiquewhite;
+    font-family: 'GothamBookIta';
+    margin-bottom: 3rem; }
+  .quickSelections1_number {
+    z-index: 1500;
+    background-color: rgba(21, 235, 188, 0.801);
+    border-radius: 50%;
+    height: 5rem;
+    width: 5rem; }
+  .quickSelections1_recommended {
+    font-family: 'GothamBoldIta';
+    color: rgba(21, 235, 188, 0.801); }
+  .quickSelections1_entry {
+    color: #ffffff;
+    font-family: 'GothamBold';
+    text-align: center; }
+  .quickSelections1_includes {
+    font-family: 'GothamBookita';
+    text-decoration: underline; }
+  .quickSelections1_notes {
+    color: #ffffff;
+    font-family: 'GothamBook'; }
+
+.quickSelections2 {
+  text-align: center;
+  margin-bottom: 4rem; }
+  .quickSelections2_availability {
+    font-family: 'GothamBoldIta';
+    color: #e0723e; }
+  .quickSelections2_selfPark {
+    color: #ffffff;
+    font-family: 'GothamBold';
+    text-align: center; }
+  .quickSelections2_notes {
+    color: #ffffff;
+    font-family: 'GothamBook'; }
+
+.quickSelections3 {
+  text-align: center;
+  margin-bottom: 4rem; }
+  .quickSelections3_residents {
+    font-family: 'GothamBoldIta';
+    color: #e0723e; }
+  .quickSelections3_entryPass {
+    color: #ffffff;
+    font-family: 'GothamBold';
+    text-align: center; }
+  .quickSelections3_notes {
+    color: #ffffff;
+    font-family: 'GothamBook'; }
+  .quickSelections3_line {
+    position: relative;
+    color: grey; }
+
+.goHaenaHeading {
+  background-image: url(./images/PNG/main-green-background.png);
+  background-size: cover;
+  position: relative;
+  bottom: 5%;
+  width: 100%;
+  background-repeat: no-repeat;
+  height: 100vh;
+  text-align: center; }
+  .goHaenaHeading_gohaena {
+    font-size: x-large;
+    color: #ffffff;
+    font-family: 'GothamBold'; }
+  .goHaenaHeading_dates {
+    color: #ffffff;
+    font-family: 'GothamBook'; }
+
+.counter {
+  position: relative;
+  width: 80px;
+  height: 50px;
+  border-radius: 40px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  transition: 0,5s; }
+  .counter:hover {
+    width: 120px;
+    border: 2px solid white; }
+
+.counter .counter_next {
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-top: 2px solid grey;
+  border-left: 2px solid grey;
+  z-index: 1;
+  transform: translateY(-50%) rotate(135deg);
+  cursor: pointer;
+  opacity: 0;
+  transition: 0.5s; }
+
+.counter:hover .counter_next {
+  opacity: 1;
+  right: 20px; }
+
+.counter .counter_prev {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-top: 2px solid grey;
+  border-left: 2px solid grey;
+  z-index: 1;
+  transform: translateY(-50%) rotate(315deg);
+  cursor: pointer;
+  opacity: 0;
+  transition: 0.5s; }
+
+.counter:hover .counter_prev {
+  opacity: 1;
+  left: 20px; }
+
+.counter_box span {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 46px;
+  font-size: 24px;
+  font-weight: 700;
+  user-select: none;
+  color: rgba(21, 235, 188, 0.801); }

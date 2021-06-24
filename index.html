@@ -4,48 +4,97 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/fonts">
-    
-    <title>Go Haena</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <div class="navigation">
-      <input type="checkbox" class="navigation_checkbox" id="navi-toggle">
-      <label for="navi-toggle" class="navigation_button"><span class="navigation_icon">&nbsp;</span></label>
-      <div class="navigation_background">&nbsp;</div>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/fonts">
+  <link rel="stylesheet" href="https://unpkg.com/ispin/dist/ispin.css">
+  <script defer src="https://unpkg.com/ispin"></script>
+  <script src="js/app.js"></script>
 
-      <nav class="navigation_nav">
-        <ul class="navigation_list">
-          <li class="navigation_item"><a href="#" class="navigation_link">Book Passes</a></li>
-          <li class="navigation_item"><a href="#" class="navigation_link">Info & FAQ's</a></li>
-          <li class="navigation_item"><a href="#" class="navigation_link">Conditions</a></li>
-          <li class="navigation_item"><a href="#" class="navigation_link">Photos</a></li>
-          <li class="navigation_item"><a href="#" class="navigation_link">About Us</a></li>
-        </ul>
-      </nav>
+  <title>Go Haena</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+  <div class="navigation">
+    <input type="checkbox" class="navigation_checkbox" id="navi-toggle">
+    <label for="navi-toggle" class="navigation_button"><span class="navigation_icon">&nbsp;</span></label>
+    <div class="navigation_background">&nbsp;</div>
+
+    <nav class="navigation_nav">
+      <ul class="navigation_list">
+        <li class="navigation_item"><a href="#" class="navigation_link">Book Passes</a></li>
+        <li class="navigation_item"><a href="#" class="navigation_link">Info & FAQ's</a></li>
+        <li class="navigation_item"><a href="#" class="navigation_link">Conditions</a></li>
+        <li class="navigation_item"><a href="#" class="navigation_link">Photos</a></li>
+        <li class="navigation_item"><a href="#" class="navigation_link">About Us</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <header class="header">
+    <div class="logo-header">
+      <h2 class="logo"><span class="go">Go</span>
+        <span class="logo2"> Haena</span>
+      </h2>
     </div>
 
-    <header class="header">
-      <div class="logo-header">
-        <h2 class="logo"><span class="go">Go</span>
-          <span class="logo2"> Haena</span>
-        </h2>
+
+  </header>
+  <div class="secondary-background">
+    <h1 class="heading-primary">Haena State Park Access</h1>
+    <h3 class="heading-secondary">Snorkel. Hike. Preserve.</h3>
+
+    <div class="quickSelections1">
+      <span class="quickSelections1_number">1</span>
+      <span class="quickSelections1_line">______________________________</span>
+      <p class="quickSelections1_access">How to access...</p>
+      <div class="quickSelections1_shuttle">
+        <p class="quickSelections1_recommended">Recommended | Most Availability</p>
+        <h3 class="quickSelections1_entry">Shuttle + Entry Pass</h3>
+        <p class="quickSelections1_notes"><span class="quickSelections1_includes">Includes</span> State Parks entry pass
+        </p>
       </div>
-      
-      
-    </header>
-    <div class="secondary-background">
-      <h1 class="heading-primary">Haena State Park Access</h1>
-      <h3 class="heading-secondary">Snorkel. Hike. Preserve.</h3>
     </div>
-    
-  </body>
+
+    <div class="quickSelections2">
+      <p class="quickSelections2_availability">Very Limited Availability</p>
+      <h3 class="quickSelections2_selfPark">Self-Park + Entry Pass</h3>
+      <p class="quickSelections2_notes">Limited parking. Lot's fill up quickly.</p>
+    </div>
+
+    <div class="quickSelections3">
+      <p class="quickSelections3_residents">Ride with Hawaii Residents Only</p>
+      <h3 class="quickSelections3_entryPass">Entry Pass Only</h3>
+      <p class="quickSelections3_notes">Illegal parking strictly enforced.</p>
+      <span class="quickSelections3_line">
+        <p>______________________________</p>
+      </span>
+    </div>
+
+    <div class="goHaenaHeading">
+      <h2 class="goHaenaHeading_gohaena">Let's Go Haena</h2>
+      <p class="goHaenaHeading_dates">Select Dates & People</p>
+
+      <div class="counter">
+        <span class="counter_next" onclick="nextNum()"></span>
+        <span class="counter_prev" onclick="prevNum()"></span>
+        <div class="counter_box" id="box"><span>0</span></div>
+      </div>
+      <input id="number-input" type="text" value="Adults">
+    </div>
+
+  </div>
+
+
+
+
+</body>
+
 </html>
