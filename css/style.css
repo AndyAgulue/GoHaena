@@ -52,7 +52,12 @@ body {
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 1.7;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  text-decoration: none; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
 
 .header {
   height: 95vh;
@@ -132,7 +137,7 @@ body {
   height: 4rem;
   width: 4rem;
   border-radius: 90%;
-  position: absolute;
+  position: fixed;
   top: 2rem;
   right: 1.5rem;
   background-color: #648a6a;
@@ -142,7 +147,7 @@ body {
 .navigation_button {
   height: 5rem;
   width: 5rem;
-  position: absolute;
+  position: fixed;
   top: 1.5rem;
   right: 1rem;
   z-index: 2000;
@@ -153,7 +158,7 @@ body {
 
 .navigation_nav {
   height: 100vh;
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   z-index: 1500;
@@ -162,7 +167,7 @@ body {
   transition: opacity 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
 
 .navigation_list {
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -242,12 +247,6 @@ body {
     color: antiquewhite;
     font-family: 'GothamBookIta';
     margin-bottom: 3rem; }
-  .quickSelections1_number {
-    z-index: 1500;
-    background-color: rgba(21, 235, 188, 0.801);
-    border-radius: 50%;
-    height: 5rem;
-    width: 5rem; }
   .quickSelections1_recommended {
     font-family: 'GothamBoldIta';
     color: rgba(21, 235, 188, 0.801); }
@@ -370,3 +369,63 @@ body {
   font-weight: 700;
   user-select: none;
   color: rgba(21, 235, 188, 0.801); }
+
+/*===================bookPasses==============*/
+.backgroundImage {
+  background-color: #ddd4c9;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 100vh; }
+
+/*========================backcground Image=================*/
+.backgroundImage {
+  background-color: #ddd4c9;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 100vh; }
+
+.footer {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20rem; }
+  .footer_img1 {
+    align-items: center; }
+
+input[type=text] {
+  width: 80%;
+  padding: 1rem 2rem;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px; }
+
+input[type=date] {
+  width: 20%;
+  padding: 1rem 2rem;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px; }
+
+input[type=number] {
+  width: 20%;
+  padding: 1rem 2rem;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px; }
+
+button {
+  width: 20%;
+  background-color: #4CAF50;
+  padding: 1.4rem 2rem;
+  margin: .8rem 0;
+  border: 0.1rem solid #ffffff;
+  border-radius: 1.7rem;
+  cursor: pointer;
+  font-family: 'GothamBold';
+  font-size: 1.5rem;
+  color: #4b2c1d; }
+  button:hover {
+    box-shadow: 0 0.8rem 1.6rem 0 rgba(0, 0, 0, 0.2); }
