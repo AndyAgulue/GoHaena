@@ -26,8 +26,8 @@
 
     <nav class="navigation_nav">
       <ul class="navigation_list">
-        <li class="navigation_item"><a href="/bookPasses.html" class="navigation_link">Book Passes</a></li>
-        <li class="navigation_item"><a href="#" class="navigation_link">Info & FAQ's</a></li>
+        <li class="navigation_item"><a href="index.html#booking-start" class="navigation_link">Book Passes</a></li>
+        <li class="navigation_item"><a href="/info.html" class="navigation_link">Info & FAQ's</a></li>
         <li class="navigation_item"><a href="#" class="navigation_link">Conditions</a></li>
         <li class="navigation_item"><a href="#" class="navigation_link">Photos</a></li>
         <li class="navigation_item"><a href="#" class="navigation_link">About Us</a></li>
@@ -45,60 +45,71 @@
 
   </header>
   <div class="secondary-background">
-    <h1 class="heading-primary">Haena State Park Access</h1>
-    <h3 class="heading-secondary">Snorkel. Hike. Preserve.</h3>
+      <h1 class="heading-primary">Haena State Park Access</h1>
+      <h3 class="heading-secondary">Snorkel. Hike. Preserve.</h3>
 
-    <div class="quickSelections1">
-      <!-- <span class="quickSelections1_number">1</span> -->
-      <span class="quickSelections1_line">______________________________</span>
-      <p class="quickSelections1_access">How to access...</p>
-      <div class="quickSelections1_shuttle">
-        <p class="quickSelections1_recommended">Recommended | Most Availability</p>
-        <h3 class="quickSelections1_entry">Shuttle + Entry Pass</h3>
-        <p class="quickSelections1_notes"><span class="quickSelections1_includes">Includes</span> State Parks entry pass
-        </p>
+      <div  class="quickSelections1">
+        <a id="booking-start" name="booking-start"></a>
+        <!-- <span class="quickSelections1_number">1</span> -->
+        <span id="booking-start" class="quickSelections1_line">______________________________</span>
+        <p class="quickSelections1_access">How to access...</p>
+        <div class="quickSelections1_shuttle">
+          <p class="quickSelections1_recommended">Recommended | Most Availability</p>
+          <h3 class="quickSelections1_entry">Shuttle + Entry Pass</h3>
+          <p class="quickSelections1_notes"><span class="quickSelections1_includes">Includes</span> State Parks entry pass</p>
+        </div>
       </div>
+
+      <div class="quickSelections2">
+        <p class="quickSelections2_availability">Very Limited Availability</p>
+        <h3 class="quickSelections2_selfPark">Self-Park + Entry Pass</h3>
+        <p class="quickSelections2_notes">Limited parking. Lot's fill up quickly.</p>
+      </div>
+
+      <div class="quickSelections3">
+        <p class="quickSelections3_residents">Ride with Hawaii Residents Only</p>
+        <h3 class="quickSelections3_entryPass">Entry Pass Only</h3>
+        <p class="quickSelections3_notes">Illegal parking strictly enforced.</p>
+        
     </div>
 
-    <div class="quickSelections2">
-      <p class="quickSelections2_availability">Very Limited Availability</p>
-      <h3 class="quickSelections2_selfPark">Self-Park + Entry Pass</h3>
-      <p class="quickSelections2_notes">Limited parking. Lot's fill up quickly.</p>
-    </div>
+    <div class="goHaenaHeading">
 
-    <div class="quickSelections3">
-      <p class="quickSelections3_residents">Ride with Hawaii Residents Only</p>
-      <h3 class="quickSelections3_entryPass">Entry Pass Only</h3>
-      <p class="quickSelections3_notes">Illegal parking strictly enforced.</p>
-      <span class="quickSelections3_line">
-        <p>______________________________</p>
-      </span>
-    </div>
-
-    <form class="goHaenaHeading">
-      <h2 class="goHaenaHeading_gohaena">Let's Go Haena</h2>
-      <p class="goHaenaHeading_dates">Select Dates & People</p>
-      <div>
-        <input type="date" id="date_picker" placeholder="Start Date">
-        <!-- <input type="date" id="date_picker"> -->
+      <p class="quickSelections1_line">______________________________</p>
+      <form >
+        <h2 class="goHaenaHeading_gohaena">Let's Go Haena</h2>
+        <p class="goHaenaHeading_dates">Select Dates & People</p>
+        <div>
+          <input type="date" id="date_picker" placeholder="Start Date">
+          <!-- <input type="date" id="date_picker"> -->
+        </div>
+        <div id="split-in-2">
+          <input type="number" id="adults" name="adults" placeholder="adults">
+          <input type="number" id="children" name="children" placeholder="under 15">
+        </div>
+        <p class="goHaenaHeading_dates">*Children under 3 are free</p>
+        <button><a href="./bookPasses.html">Check Availability</a></button>
+      </form>
+      
+      <div class="quickSelections3_links">
+            <p class="quickSelections3_link-1">General Info & FAQ's</p>
+            <p class="quickSelections3_link-2">Hawaii Resident Info</p>
+            <p class="quickSelections3_link-3">Overnight Parking (Campers Only)</p>
       </div>
-      <div id="split-in-2">
-        <input type="number" id="adults" name="adults" placeholder="adults">
-        <input type="number" id="children" name="children" placeholder="under 15">
-      </div>
-      <p class="goHaenaHeading_dates">*Children under 3 are free</p>
-      <button><a href="./bookPasses.html">Check Availability</a></button>
-    </form>
-
+    </div>
     
-    <h3 class="disclosures">Disclosures</h3>
-        <p class="disclosure-text">We highly encourage useof the Shuttle service.</p>
-        <p class="disclosure-text">Parking in illegel zones and walking to the park entrance is strictly enforced.</p>
-        <p class="disclosure-text">Pass is only for visitors staying in Haena or being dropped off via a 3rd party</p>
           
         
 
     <footer class="footer">
+
+      <div>
+        <h3 class="disclosures">Disclosures</h3>
+        <p class="disclosure-text">We highly encourage useof the Shuttle service.</p>
+        <p class="disclosure-text">Parking in illegel zones and walking to the park entrance is strictly enforced.</p>
+        <p class="disclosure-text">Pass is only for visitors staying in Haena or being dropped off via a 3rd party</p>
+    </div>
+
       <div class="footer_img1">
       <!-- <img src="/css/images/PNG/Group 325@2x.png" alt=""> -->
       </div>
@@ -111,8 +122,6 @@
         <img src="/css/images/PNG/logo@2x.png" alt="">
       </div>
     </footer>
-
-  </div>
 
 </body>
 
